@@ -67,6 +67,6 @@
 if(isset($_POST['logout'])){
   session_unset();
   session_destroy();
-  header("location:http://localhost/finalProject/login.php");
+  header("location:http://localhost/fullWebSite/login.php");
 }
 ?>

@@ -34,7 +34,7 @@ if(isset($_POST['login'])){
         echo "hello";
         session_start();
         $_SESSION['username']=$username;
-        if($row['role']=="user"){
+        if($status=="user"){
             header("location: user/index.php");
         }else if($status=="admin"){
             header("location: admin/index.php");
